@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_components_ct_abuttons",
+  "info": {
+    "displayName": "Bigbutton",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Bigbutton": {
+      "type": "string"
+    }
+  }
+}

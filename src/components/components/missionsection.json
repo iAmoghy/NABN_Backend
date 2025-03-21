@@ -1,0 +1,58 @@
+{
+  "collectionName": "components_components_missionsections",
+  "info": {
+    "displayName": "Missionsection",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "mission1": {
+      "type": "string"
+    },
+    "mission1subtitle": {
+      "type": "string"
+    },
+    "mission2": {
+      "type": "string"
+    },
+    "mission2subtitle": {
+      "type": "string"
+    },
+    "mission3": {
+      "type": "string"
+    },
+    "mission3subtitle": {
+      "type": "string"
+    },
+    "icon1": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "icon2": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "icon3": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

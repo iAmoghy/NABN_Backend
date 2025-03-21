@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_components_ctas",
+  "info": {
+    "displayName": "CTAsection",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "CTAtitle": {
+      "type": "string"
+    },
+    "CTAsubtitle": {
+      "type": "string"
+    },
+    "CTAbutton": {
+      "type": "string"
+    }
+  }
+}

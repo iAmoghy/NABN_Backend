@@ -1,0 +1,24 @@
+{
+  "kind": "singleType",
+  "collectionName": "teams",
+  "info": {
+    "singularName": "team",
+    "pluralName": "teams",
+    "displayName": "team",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "pagecontent": {
+      "type": "dynamiczone",
+      "components": [
+        "components.title",
+        "components.image",
+        "components.description",
+        "components.subtitle"
+      ]
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_components_impactsections",
+  "info": {
+    "displayName": "Impactsection"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "fact1": {
+      "type": "string"
+    },
+    "fact1description": {
+      "type": "string"
+    },
+    "fact2": {
+      "type": "string"
+    },
+    "fact2description": {
+      "type": "string"
+    },
+    "fact3": {
+      "type": "string"
+    },
+    "fact3description": {
+      "type": "string"
+    }
+  }
+}
