@@ -499,6 +499,36 @@ export interface ApiTeamTeam extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiTeammemberTeammember extends Struct.CollectionTypeSchema {
+  collectionName: 'teammembers';
+  info: {
+    displayName: 'teammember';
+    pluralName: 'teammembers';
+    singularName: 'teammember';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    description: Schema.Attribute.String;
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::teammember.teammember'
+    > &
+      Schema.Attribute.Private;
+    name: Schema.Attribute.String;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface PluginContentReleasesRelease
   extends Struct.CollectionTypeSchema {
   collectionName: 'strapi_releases';
@@ -1012,6 +1042,7 @@ declare module '@strapi/strapi' {
       'api::event.event': ApiEventEvent;
       'api::home.home': ApiHomeHome;
       'api::team.team': ApiTeamTeam;
+      'api::teammember.teammember': ApiTeammemberTeammember;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
       'plugin::i18n.locale': PluginI18NLocale;
