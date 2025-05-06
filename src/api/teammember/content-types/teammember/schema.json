@@ -28,10 +28,7 @@
     "position": {
       "type": "string"
     },
-    "phone": {
-      "type": "string"
-    },
-    "address": {
+    "description": {
       "type": "string"
     }
   }
